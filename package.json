@@ -25,7 +25,7 @@
     "lint-staged": "lint-staged --allow-empty",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "changeset publish --registry=https://registry.npmjs.com/"
+    "release": "changeset publish"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
