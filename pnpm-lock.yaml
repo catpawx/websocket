@@ -11,6 +11,9 @@ devDependencies:
   '@catpawx/prettier-config-preset':
     specifier: ^0.0.1
     version: 0.0.1
+  '@changesets/changelog-github':
+    specifier: ^0.5.0
+    version: 0.5.0
   '@changesets/cli':
     specifier: ^2.27.6
     version: 2.27.6
@@ -378,6 +381,16 @@ packages:
       '@changesets/types': 6.0.0
     dev: true
 
+  /@changesets/changelog-github@0.5.0:
+    resolution: {integrity: sha512-zoeq2LJJVcPJcIotHRJEEA2qCqX0AQIeFE+L21L8sRLPVqDhSXY8ZWAt2sohtBpFZkBwu+LUwMSKRr2lMy3LJA==}
+    dependencies:
+      '@changesets/get-github-info': 0.6.0
+      '@changesets/types': 6.0.0
+      dotenv: 8.6.0
+    transitivePeerDependencies:
+      - encoding
+    dev: true
+
   /@changesets/cli@2.27.6:
     resolution: {integrity: sha512-PB7KS5JkCQ4WSXlnfThn8CXAHVwYxFdZvYTimhi12fls/tzj9iimUhKsYwkrKSbw1AiVlGCZtihj5Wkt6siIjA==}
     hasBin: true
@@ -442,6 +455,15 @@ packages:
       chalk: 2.4.2
       fs-extra: 7.0.1
       semver: 7.6.0
+    dev: true
+
+  /@changesets/get-github-info@0.6.0:
+    resolution: {integrity: sha512-v/TSnFVXI8vzX9/w3DU2Ol+UlTZcu3m0kXTjTT4KlAdwSvwutcByYwyYn9hwerPWfPkT2JfpoX0KgvCEi8Q/SA==}
+    dependencies:
+      dataloader: 1.4.0
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /@changesets/get-release-plan@4.0.2:
@@ -1825,6 +1847,10 @@ packages:
       is-data-view: 1.0.1
     dev: true
 
+  /dataloader@1.4.0:
+    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+    dev: true
+
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
@@ -1921,6 +1947,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       is-obj: 2.0.0
+    dev: true
+
+  /dotenv@8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
     dev: true
 
   /eastasianwidth@0.2.0:
@@ -3722,6 +3753,18 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+    dependencies:
+      whatwg-url: 5.0.0
+    dev: true
+
   /node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: true
@@ -4724,6 +4767,10 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+    dev: true
+
   /ts-api-utils@1.3.0(typescript@5.4.5):
     resolution: {integrity: sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==}
     engines: {node: '>=16'}
@@ -4893,6 +4940,17 @@ packages:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
     dependencies:
       defaults: 1.0.4
+    dev: true
+
+  /webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: true
+
+  /whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
     dev: true
 
   /which-boxed-primitive@1.0.2:

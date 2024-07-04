@@ -1,11 +1,15 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.0.1/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "@catpawx/websocket" }
+  ],
+  "access": "public",
+  "baseBranch": "main",
+  "tag": true,
   "commit": false,
   "fixed": [],
   "linked": [["@catpawx/*"]],
-  "access": "public",
-  "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": []
 }
