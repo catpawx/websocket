@@ -27,7 +27,7 @@ jobs:
         uses: changesets/action@master
         with:
           publish: pnpm run release
-          commit: Version release
+          commit: 'feat: Version release'
           title: Next release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
