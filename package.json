@@ -13,6 +13,10 @@
     "websocket"
   ],
   "author": "相甫",
+  "bugs": {
+    "url": "https://github.com/catpawx/websocket/issues"
+  },
+  "homepage": "https://github.com/catpawx/websocket",
   "license": "MIT",
   "scripts": {
     "postinstall": "husky install",
