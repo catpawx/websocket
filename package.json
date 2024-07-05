@@ -1,6 +1,6 @@
 {
   "name": "@catpawx/websocket",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "🐈‍⬛ 猫爪联盟前端团队基于原生websocket封装",
   "type": "module",
   "main": "dist/index.js",
